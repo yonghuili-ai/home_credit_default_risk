@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Quandl Tracker</title>
+		<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_ticker.css')}}'>
+	</head>
+	<div class=page>
+  			<h1>Home Credit Default Check</h1>
+  			<a href="visual"  target="_blank">Some visual info</a>
+  			<div class=metanav>
+    			<h3>Complete the following form.</h3>
+
+				<form id='input' method='post' action='index'>	
+	    			<p>
+						AMT_ANNUITY: <input type='text' name='amt_annuity' />
+		  			</p>
+		  			<p>
+						AMT_CREDIT: <input type='text' name='amt_credit' />
+		  			</p>
+		  			<p>
+						AMT_GOODS_PRICE: <input type='text' name='amt_goods_price' />
+		  			</p>
+		  			<p>
+						DAYS_BIRTH: <input type='text' name='days_birth' />
+		  			</p>
+		  			<p>
+						DAYS_EMPLOYED: <input type='text' name='days_employed' />
+		  			</p>
+		  			<p>
+						DAYS_ID_PUBLISH: <input type='text' name='days_id_publish' />
+						<br><i>*range -7200 ~ 0 </i>
+		  			</p>
+		  			<p>
+						EXT_SOURCE_2: <input type='text' name='ext_source_2' />
+						<br><i>*range 0 ~ 0.85 </i>
+		  			</p>
+		  			<p>
+						EXT_SOURCE_3: <input type='text' name='ext_source_3' />
+						<br><i>*range 0 ~ 0.89	</i>
+		  			</p>
+		  			<p>
+						i_AMT_PAYMENT: <input type='text' name='i_amt_payment' />
+		  			</p>
+		  			<p>
+						pc_CNT_INSTALMENT_FUTURE: <input type='text' name='pc_cnt_instalment_future' />
+		  			</p>
+		  			<p>
+		    			<input type="submit" value="Submit">
+		  			</p>  		
+				</form>
+
+  			</div>
+		</div>
+	</body>
+</html>
